@@ -1,1 +1,3 @@
-export * from './components/Button';
+export * from './components/Common';
+export * from './components/Blocs';
+
