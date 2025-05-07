@@ -1,28 +1,27 @@
-import '../../style.css';
+import '../../../style.css';
 
 export interface ButtonProps {
-  /** What background color to use */
-  backgroundColor?: string;
-  /** Button contents */
-  label: string;
+  /** Additional CSS classes */
+  className?: string;
+  /** Section title */
+  title: string;
   /** Optional click handler */
   onClick?: () => void;
 }
 
 /** Primary UI component for user interaction */
 const Button = ({
-  backgroundColor,
-  label,
+  className,
+  title,
   ...props
 }: ButtonProps) => {
   return (
     <button
       type="button"
-      className="bg-red-300"
-      style={{ backgroundColor }}
+      className={`px-6 bg-neutral-100 py-3 hover:bg-neutral-200 cursor-pointer ${className || ''}`}
       {...props}
     >
-      {label}
+      {title}
     </button>
   );
 };
