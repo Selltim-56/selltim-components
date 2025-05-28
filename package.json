@@ -23,6 +23,7 @@
   "dependencies": {
     "@img-comparison-slider/react": "^8.0.2",
     "@tailwindcss/vite": "^4.1.5",
+    "embla-carousel-react": "^8.6.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.5",
