@@ -3,8 +3,8 @@ import { type EmblaOptionsType, type EmblaPluginType } from "embla-carousel";
 import "../../../style.css";
 import React, { useCallback } from "react";
 
-type BaseCarrouselProps = {
-  /** Elements to be rendered inside the Carrousel */
+type BaseCarouselProps = {
+  /** Elements to be rendered inside the Carousel */
   children?: React.ReactNode;
 
   /** Whether to show navigation controls */
@@ -30,19 +30,19 @@ type WithoutControls = {
   nextButton?: React.ReactNode;
 };
 
-export type CarrouselProps = EmblaOptionsType &
+export type CarouselProps = EmblaOptionsType &
   EmblaPluginType[] &
-  BaseCarrouselProps &
+  BaseCarouselProps &
   (WithControls | WithoutControls);
 
-const Carrousel = ({
+const Carousel = ({
   children,
   prevButton,
   nextButton,
   controls,
   slidesToShow = 1,
   ...props
-}: CarrouselProps) => {
+}: CarouselProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(props);
 
   const prevSlide = useCallback(() => {
@@ -92,4 +92,4 @@ const Carrousel = ({
   );
 };
 
-export default Carrousel;
+export default Carousel;

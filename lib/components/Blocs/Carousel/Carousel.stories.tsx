@@ -1,15 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Carrousel from "./Carrousel";
+import Carousel from "./Carousel";
 
 const meta = {
-  title: "Blocs/Carrousel",
-  component: Carrousel,
+  title: "Blocs/Carousel",
+  component: Carousel,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-  args: {},
-} satisfies Meta<typeof Carrousel>;
+} satisfies Meta<typeof Carousel>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -21,7 +20,7 @@ export const WithImages: Story = {
   },
   render: (args) => (
     <div style={{ maxWidth: "600px" }}>
-      <Carrousel {...args}>
+      <Carousel {...args}>
         <img
           src="https://picsum.photos/600/400?random=2"
           alt="Sample image 2"
@@ -37,7 +36,7 @@ export const WithImages: Story = {
           alt="Sample image 4"
           style={{ width: "100%", height: "auto", objectFit: "cover" }}
         />
-      </Carrousel>
+      </Carousel>
     </div>
   ),
 };
