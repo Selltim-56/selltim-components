@@ -27,8 +27,13 @@ const Image = ({ lightboxOptions, ...props }: ImageProps) => {
       <Lightbox
         open={isOpen}
         close={() => setIsOpen(false)}
-        styles={{ button: { display: "none" }, ...lightboxOptions?.styles }}
-        slides={[{ src: props.src || "", alt: props.alt || "" }]}
+        styles={{ ...lightboxOptions?.styles }}
+        slides={[{ src: props.src || "", alt: props.alt || "" }, ...(lightboxOptions?.slides ?? [])]}
+        render={{
+          buttonPrev: () => null,
+          buttonNext: () => null,
+          ...lightboxOptions?.render
+        }}
         {...lightboxOptions}
       />
     </>

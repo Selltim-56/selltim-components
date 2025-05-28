@@ -8,7 +8,9 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  args: {},
+  args: {
+    src: 'https://picsum.photos/1200/800',
+  },
 } satisfies Meta<typeof Image>;
 
 export default meta;
