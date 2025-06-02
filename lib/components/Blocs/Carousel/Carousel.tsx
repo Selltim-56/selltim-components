@@ -28,6 +28,9 @@ type BaseCarouselProps = {
 
 export type CarouselProps = BaseCarouselProps;
 
+/**
+ * Carousel component
+ */
 const Carousel = ({
   children,
   prevButton,
