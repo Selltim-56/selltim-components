@@ -430,6 +430,13 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/retry/-/retry-0.4.2.tgz"
   integrity sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==
 
+"@img-comparison-slider/react@^8.0.2":
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/@img-comparison-slider/react/-/react-8.0.2.tgz#91bf30b646bfd7199626b3c5dbb19bdbb7e42892"
+  integrity sha512-Him0yhbXpMXdnV6R3XE3LiXcMRhSXFMsbk6I7ct5HxO2YpK/BAGz3ub+7+akJRnK2XI7c3vQqvoIE507N1K4SA==
+  dependencies:
+    img-comparison-slider "~8.0.0"
+
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
   resolved "https://registry.npmjs.org/@isaacs/cliui/-/cliui-8.0.2.tgz"
@@ -742,6 +749,11 @@
     "@types/argparse" "1.0.38"
     argparse "~1.0.9"
     string-argv "~0.3.1"
+
+"@sidekickicons/react@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@sidekickicons/react/-/react-0.13.0.tgz#917e896431789cca146d8855205b179046fe163e"
+  integrity sha512-v4KQZ+nfca5NAa2vT4S5UV1z2QxDWoAsNHQGToczOnfKN6mvZW2Jr48ZbYhYHzV2BUKp8Kywe8/+t+Ue73e3QQ==
 
 "@storybook/addon-actions@8.6.12":
   version "8.6.12"
@@ -2132,11 +2144,6 @@ electron-to-chromium@^1.5.149:
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.150.tgz"
   integrity sha512-rOOkP2ZUMx1yL4fCxXQKDHQ8ZXwisb2OycOQVKHgvB3ZI4CvehOd4y2tfnnLDieJ3Zs1RL1Dlp3cMkyIn7nnXA==
 
-embla-carousel-auto-scroll@^8.6.0:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/embla-carousel-auto-scroll/-/embla-carousel-auto-scroll-8.6.0.tgz#02f648acd8b184a0f3ae0f2b38a983afc16a2648"
-  integrity sha512-WT9fWhNXFpbQ6kP+aS07oF5IHYLZ1Dx4DkwgCY8Hv2ZyYd2KMCPfMV1q/cA3wFGuLO7GMgKiySLX90/pQkcOdQ==
-
 embla-carousel-react@^8.6.0:
   version "8.6.0"
   resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-8.6.0.tgz#b737042a32761c38d6614593653b3ac619477bd1"
@@ -2775,6 +2782,11 @@ ignore@^5.2.0, ignore@^5.3.1:
   version "5.3.2"
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.3.2.tgz"
   integrity sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==
+
+img-comparison-slider@~8.0.0:
+  version "8.0.6"
+  resolved "https://registry.yarnpkg.com/img-comparison-slider/-/img-comparison-slider-8.0.6.tgz#a94385e49ee630903f8a6a4f9959658078668c87"
+  integrity sha512-ej4de7mWyjcXZvDgHq8K2a/dG8Vv+qYTdUjZa3cVILf316rLtDrHyGbh9fPvixmAFgbs30zTLfmaRDa7abjtzw==
 
 import-fresh@^3.2.1:
   version "3.3.1"
@@ -4421,6 +4433,11 @@ uuid@^9.0.0:
   resolved "https://registry.npmjs.org/uuid/-/uuid-9.0.1.tgz"
   integrity sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==
 
+vanilla-cookieconsent@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/vanilla-cookieconsent/-/vanilla-cookieconsent-3.1.0.tgz#0f430f4788e9a09e22e795088889b0679a88a263"
+  integrity sha512-/McNRtm/3IXzb9dhqMIcbquoU45SzbN2VB+To4jxEPqMmp7uVniP6BhGLjU8MC7ZCDsNQVOp27fhQTM/ruIXAA==
+
 vary@^1, vary@^1.1.2, vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz"
@@ -4580,6 +4597,11 @@ yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
+
+yet-another-react-lightbox@^3.23.2:
+  version "3.23.2"
+  resolved "https://registry.yarnpkg.com/yet-another-react-lightbox/-/yet-another-react-lightbox-3.23.2.tgz#e0fb50b2109947beb6abf3b2f4664a67addc3d71"
+  integrity sha512-nEEtFejdUTeF5VLVO0/uZ+Kw+BxQn4ODKyJkX1JACyXmILRE/++50BS3ylnFytRRWYOJjeeTcOS8o9B00ENTqA==
 
 yocto-queue@^0.1.0:
   version "0.1.0"
