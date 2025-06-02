@@ -24,6 +24,7 @@
     "@img-comparison-slider/react": "^8.0.2",
     "@sidekickicons/react": "^0.13.0",
     "@tailwindcss/vite": "^4.1.5",
+    "embla-carousel-auto-scroll": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "heroicons": "^2.2.0",
     "react": "^19.1.0",
