@@ -7,33 +7,26 @@ type BaseCarouselProps = {
   /** Elements to be rendered inside the Carousel */
   children?: React.ReactNode;
 
-  /** Whether to show navigation controls */
+  /** Custom previous button element */
+  prevButton?: React.ReactNode;
+
+  /** Custom next button element */
+  nextButton?: React.ReactNode;
+
+  /** Show controls (prev/next buttons) */
   controls?: boolean;
 
   /** Number of slides to show at once */
   slidesToShow?: number;
+
+  /** Embla carousel options see doc https://www.embla-carousel.com/api/options/#reference */
+  emblaOptions?: EmblaOptionsType;
+
+  /** Embla plugins https://www.embla-carousel.com/plugins/#choose-a-plugin */
+  plugins?: EmblaPluginType[];
 };
 
-type WithControls = {
-  controls: true;
-
-  /** Custom previous button element */
-  prevButton: React.ReactNode;
-
-  /** Custom next button element */
-  nextButton: React.ReactNode;
-};
-
-type WithoutControls = {
-  controls?: false;
-  prevButton?: React.ReactNode;
-  nextButton?: React.ReactNode;
-};
-
-export type CarouselProps = EmblaOptionsType &
-  EmblaPluginType[] &
-  BaseCarouselProps &
-  (WithControls | WithoutControls);
+export type CarouselProps = BaseCarouselProps;
 
 const Carousel = ({
   children,
@@ -41,9 +34,10 @@ const Carousel = ({
   nextButton,
   controls,
   slidesToShow = 1,
-  ...props
+  emblaOptions = {},
+  plugins = [],
 }: CarouselProps) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(props);
+  const [emblaRef, emblaApi] = useEmblaCarousel(emblaOptions, plugins);
 
   const prevSlide = useCallback(() => {
     if (emblaApi) {
@@ -60,7 +54,7 @@ const Carousel = ({
   const slides = React.Children.map(children, (child, index) => (
     <div
       style={{ width: `${100 / slidesToShow}%` }}
-      className=" flex-shrink-0 flex-grow-0"
+      className="flex-shrink-0 flex-grow-0"
       key={index}
     >
       {child}
