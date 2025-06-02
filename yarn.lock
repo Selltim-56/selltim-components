@@ -750,6 +750,11 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
+"@sidekickicons/react@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@sidekickicons/react/-/react-0.13.0.tgz#917e896431789cca146d8855205b179046fe163e"
+  integrity sha512-v4KQZ+nfca5NAa2vT4S5UV1z2QxDWoAsNHQGToczOnfKN6mvZW2Jr48ZbYhYHzV2BUKp8Kywe8/+t+Ue73e3QQ==
+
 "@storybook/addon-actions@8.6.12":
   version "8.6.12"
   resolved "https://registry.npmjs.org/@storybook/addon-actions/-/addon-actions-8.6.12.tgz"
@@ -2722,6 +2727,11 @@ he@^1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
+heroicons@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/heroicons/-/heroicons-2.2.0.tgz#f1f554155152b4ec4d1b7165363d7c583690f77d"
+  integrity sha512-yOwvztmNiBWqR946t+JdgZmyzEmnRMC2nxvHFC90bF1SUttwB6yJKYeme1JeEcBfobdOs827nCyiWBS2z/brog==
+
 html-escaper@^2.0.0:
   version "2.0.2"
   resolved "https://registry.npmjs.org/html-escaper/-/html-escaper-2.0.2.tgz"
@@ -4404,6 +4414,11 @@ uuid@^9.0.0:
   version "9.0.1"
   resolved "https://registry.npmjs.org/uuid/-/uuid-9.0.1.tgz"
   integrity sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==
+
+vanilla-cookieconsent@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/vanilla-cookieconsent/-/vanilla-cookieconsent-3.1.0.tgz#0f430f4788e9a09e22e795088889b0679a88a263"
+  integrity sha512-/McNRtm/3IXzb9dhqMIcbquoU45SzbN2VB+To4jxEPqMmp7uVniP6BhGLjU8MC7ZCDsNQVOp27fhQTM/ruIXAA==
 
 vary@^1, vary@^1.1.2, vary@~1.1.2:
   version "1.1.2"

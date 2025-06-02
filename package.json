@@ -22,10 +22,13 @@
   },
   "dependencies": {
     "@img-comparison-slider/react": "^8.0.2",
+    "@sidekickicons/react": "^0.13.0",
     "@tailwindcss/vite": "^4.1.5",
+    "heroicons": "^2.2.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.5",
+    "vanilla-cookieconsent": "^3.1.0",
     "yet-another-react-lightbox": "^3.23.2"
   },
   "devDependencies": {
