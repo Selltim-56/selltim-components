@@ -30,7 +30,7 @@ export type CookieConsentProps = {
    * @example
    * ```
    * import { sendGAEvent } from "@next/third-parties/google";
-   `
+   ```
    * @param _args
    */
   sendGAEvent: (..._args: Object[]) => void;
