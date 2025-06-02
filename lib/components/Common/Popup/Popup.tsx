@@ -6,7 +6,7 @@ export interface PopupProps {
   /** Additional CSS classes */
   className?: string;
 
-  /** Date at witch popup should not open anymore */
+  /** Date at which popup should not open anymore */
   endOpeningDate?: Date;
 
   /** Children that will be rendered inside the popup */
