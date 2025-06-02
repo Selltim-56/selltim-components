@@ -8,15 +8,8 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  
-} satisfies Meta<typeof Partners>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Basic: Story = {
   args: {
-    autoScrollOptions: {direction:"forward"},
+    autoScrollOptions: { direction: "forward" },
     partners: [
       {
         src: "https://placehold.co/200x100/png?text=Partner+1",
@@ -47,5 +40,12 @@ export const Basic: Story = {
         href: "https://example.com/partner7"
       },
     ]
-  },
+  }
+} satisfies Meta<typeof Partners>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+  args: {},
 };

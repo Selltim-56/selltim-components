@@ -16,6 +16,9 @@ export type PartnersProps = EmblaOptionsType & {
   autoScrollOptions?: AutoScrollOptionsType;
 };
 
+/**
+ * Partners carousel component
+ */
 const Partners = ({
   partners,
   autoScrollOptions,
@@ -32,7 +35,7 @@ const Partners = ({
       AutoScroll({
         startDelay: 0,
         stopOnInteraction: false,
-        speed: 1.3,
+        speed: 0.5,
         ...autoScrollOptions,
       }),
     ]
