@@ -19,24 +19,22 @@ export const WithImages: Story = {
     align: "center",
   },
   render: (args) => (
-    <div style={{ maxWidth: "600px" }}>
-      <Carousel {...args}>
-        <img
-          src="https://picsum.photos/600/400?random=2"
-          alt="Sample image 2"
-          style={{ width: "100%", height: "auto", objectFit: "cover" }}
-        />
-        <img
-          src="https://picsum.photos/600/400?random=3"
-          alt="Sample image 3"
-          style={{ width: "100%", height: "auto", objectFit: "cover" }}
-        />
-        <img
-          src="https://picsum.photos/600/400?random=4"
-          alt="Sample image 4"
-          style={{ width: "100%", height: "auto", objectFit: "cover" }}
-        />
-      </Carousel>
-    </div>
+    <Carousel {...args}>
+      <img
+        src="https://picsum.photos/600/400?random=2"
+        alt="Sample image 2"
+        style={{ width: "100%", height: "auto", objectFit: "cover" }}
+      />
+      <img
+        src="https://picsum.photos/600/400?random=3"
+        alt="Sample image 3"
+        style={{ width: "100%", height: "auto", objectFit: "cover" }}
+      />
+      <img
+        src="https://picsum.photos/600/400?random=4"
+        alt="Sample image 4"
+        style={{ width: "100%", height: "auto", objectFit: "cover" }}
+      />
+    </Carousel>
   ),
 };
