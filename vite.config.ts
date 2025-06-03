@@ -15,9 +15,20 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: resolve(__dirname, 'lib/main.js'),
+      entry: resolve(__dirname, 'lib/main.ts'),
       name: 'SelltimComponents',
       fileName: 'main',
     },
+    rollupOptions: {
+      external: ['react', 'react-dom', 'react/jsx-runtime', 'next'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'jsxRuntime',
+          next: 'Next'
+        }
+      }
+    }
   },
 })
