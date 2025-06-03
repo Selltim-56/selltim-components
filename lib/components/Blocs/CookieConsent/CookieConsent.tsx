@@ -1,4 +1,6 @@
 /* eslint-disable @typescript-eslint/no-wrapper-object-types */
+'use client';
+
 import '../../../style.css';
 
 import "vanilla-cookieconsent/dist/cookieconsent.css";
