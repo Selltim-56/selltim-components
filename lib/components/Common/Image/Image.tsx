@@ -1,12 +1,10 @@
 import { useState } from "react";
 import "../../../style.css";
+import BaseImage, { type ImageProps as BaseImageProps } from 'next/image';
 import Lightbox, { type LightboxProps } from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-export type ImageProps = React.DetailedHTMLProps<
-  React.ImgHTMLAttributes<HTMLImageElement>,
-  HTMLImageElement
-> & {
+export type ImageProps = BaseImageProps & {
   /** Remaining options for lightBox */
   lightboxOptions?: LightboxProps;
 };
@@ -17,7 +15,7 @@ const Image = ({ lightboxOptions, ...props }: ImageProps) => {
 
   return (
     <>
-      <img
+      <BaseImage
         onClick={(e) => {
           if (props.onClick) props.onClick(e);
           setIsOpen(true);
@@ -28,7 +26,7 @@ const Image = ({ lightboxOptions, ...props }: ImageProps) => {
         open={isOpen}
         close={() => setIsOpen(false)}
         styles={{ ...lightboxOptions?.styles }}
-        slides={[{ src: props.src || "", alt: props.alt || "" }, ...(lightboxOptions?.slides ?? [])]}
+        slides={[{ src: props.src as string || "", alt: props.alt || "" }, ...(lightboxOptions?.slides ?? [])]}
         render={{
           buttonPrev: () => null,
           buttonNext: () => null,

@@ -1,5 +1,6 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import Carousel from "./Carousel";
+import Image from "next/image";
 
 const meta = {
   title: "Blocs/Carousel",
@@ -59,19 +60,25 @@ export const Default: Story = {
   },
   render: (args) => (
     <Carousel {...args}>
-      <img
+      <Image
         src="https://picsum.photos/600/400?random=1"
         alt="Sample image 1"
+        width={600}
+        height={400}
         style={{ width: "100%", height: "auto", objectFit: "cover" }}
       />
-      <img
+      <Image
         src="https://picsum.photos/600/400?random=2"
         alt="Sample image 2"
+        width={600}
+        height={400}
         style={{ width: "100%", height: "auto", objectFit: "cover" }}
       />
-      <img
+      <Image
         src="https://picsum.photos/600/400?random=3"
         alt="Sample image 3"
+        width={600}
+        height={400}
         style={{ width: "100%", height: "auto", objectFit: "cover" }}
       />
     </Carousel>
@@ -84,19 +91,25 @@ export const WithControls: Story = {
   },
   render: (args) => (
     <Carousel {...args}>
-      <img
+      <Image
         src="https://picsum.photos/600/400?random=2"
         alt="Sample image 2"
+        width={600}
+        height={400}
         style={{ width: "100%", height: "auto", objectFit: "cover" }}
       />
-      <img
+      <Image
         src="https://picsum.photos/600/400?random=3"
         alt="Sample image 3"
+        width={600}
+        height={400}
         style={{ width: "100%", height: "auto", objectFit: "cover" }}
       />
-      <img
+      <Image
         src="https://picsum.photos/600/400?random=4"
         alt="Sample image 4"
+        width={600}
+        height={400}
         style={{ width: "100%", height: "auto", objectFit: "cover" }}
       />
     </Carousel>

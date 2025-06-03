@@ -1,6 +1,7 @@
 import '../../../style.css';
 
 import { ImgComparisonSlider } from "@img-comparison-slider/react";
+import Image from "next/image";
 
 export type ComparisonSliderProps = {
   /** URL to the before image */
@@ -17,8 +18,8 @@ export type ComparisonSliderProps = {
 const ComparisonSlider = ({ beforeImageUrl, afterImageUrl, className }: ComparisonSliderProps) => {
   return (
     <ImgComparisonSlider className={className}>
-      <img slot="first" src={beforeImageUrl} />
-      <img slot="second" src={afterImageUrl} />
+      <Image width={1024} height={500} slot="first" src={beforeImageUrl} alt="" />
+      <Image width={1024} height={500} slot="second" src={afterImageUrl} alt="" />
     </ImgComparisonSlider>
   )
 };
