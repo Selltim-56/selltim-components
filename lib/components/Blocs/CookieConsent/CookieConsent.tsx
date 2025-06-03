@@ -3,6 +3,7 @@
 
 import '../../../style.css';
 
+import "vanilla-cookieconsent/dist/cookieconsent.css";
 import * as VanillaCookieConsent from "vanilla-cookieconsent";
 import { useEffect } from "react";
 import { CookieIcon } from "@sidekickicons/react/24/outline";
