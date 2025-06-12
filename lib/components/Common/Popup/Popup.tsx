@@ -28,7 +28,7 @@ const Popup = ({ endDate, children, maxViewsPerSession }: PopupProps) => {
           : 0;
     } catch { /* empty */ }
 
-    if (isDateValid && maxViewsPerSession && views < maxViewsPerSession) {
+    if (isDateValid && (maxViewsPerSession ? views < maxViewsPerSession : true)) {
       requestAnimationFrame(() => {
         setIsOpen(true);
         try {
