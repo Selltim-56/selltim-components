@@ -9,9 +9,15 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {
-    className: { control: "text" },
-    endOpeningDate: { control: "date" },
+    endDate: { control: "date" },
   },
+  args: {
+    children: (
+      <div className="p-12 flex items-center justify-center text-black bg-white text-center">
+        Content of popup
+      </div>
+    ),
+  }
 } satisfies Meta<typeof Popup>;
 
 export default meta;
@@ -19,20 +25,18 @@ type Story = StoryObj<typeof meta>;
 
 export const Basic: Story = {
   args: {
-    endOpeningDate: new Date(Date.now() + 1000 * 60 * 60 * 24),
-    className: "overflow-hidden rounded-lg shadow-lg",
-    children: (<div className="h-full w-full flex items-center justify-center text-white bg-black">
-      Content of popup
-    </div>),
+    endDate: new Date(Date.now() + 1000 * 60 * 60 * 24),
+  },
+};
+
+export const OneTime: Story = {
+  args: {
+    maxViewsPerSession: 1,
   },
 };
 
 export const EndedYesterday: Story = {
   args: {
-    endOpeningDate: new Date(Date.now() - 1000 * 60 * 60 * 24),
-    className: "overflow-hidden rounded-lg shadow-lg",
-    children: (<div className="h-full w-full flex items-center justify-center text-white bg-black">
-      Content of popup
-    </div>),
+    endDate: new Date(Date.now() - 1000 * 60 * 60 * 24),
   },
 };
