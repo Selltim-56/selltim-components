@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import ComparisonSlider from "./ComparisonSlider.tsx";
 
 const meta = {
@@ -9,6 +9,7 @@ const meta = {
   },
   tags: ['autodocs'],
   args: {
+    className: 'h-96 w-96',
     beforeImageUrl: 'https://img-comparison-slider.sneas.io/demo/images/before.webp',
     afterImageUrl: 'https://img-comparison-slider.sneas.io/demo/images/after.webp'
   },

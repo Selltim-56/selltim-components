@@ -1,6 +1,7 @@
 import '../../../style.css';
 
 import type { ReactElement } from "react";
+import Image from "next/image";
 
 export interface SectionProps {
   /** URL to the media file */
@@ -48,7 +49,7 @@ const Section = ({
           />
         )}
         {mediaType === 'image' && (
-          <img className={`h-full w-full object-cover ${mediaClassName || ''}`} src={mediaUrl} />
+          <Image height={1024} width={500} className={`h-full w-full object-cover ${mediaClassName || ''}`} src={mediaUrl} alt="" />
         )}
       </div>
       <div className={`flex flex-col flex-1 justify-center py-6 px-4 md:px-0 ${contentClassName || ''}`}>
