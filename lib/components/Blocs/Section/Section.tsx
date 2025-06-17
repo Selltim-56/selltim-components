@@ -36,11 +36,11 @@ const Section = ({
   contentClassName
 }: SectionProps) => {
   return (
-    <div className={`sc:flex sc:flex-col ${reverse ? 'sc:md:flex-row-reverse' : 'sc:md:flex-row'} sc:md:gap-12 ${containerClassName || ''}`}>
-      <div className="sc:flex-1 sc:aspect-video">
+    <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} md:gap-12 ${containerClassName || ''}`}>
+      <div className="flex-1 aspect-video">
         {mediaType === 'video' && (
           <video
-            className={`sc:w-full sc:h-full sc:object-cover ${mediaClassName || ''}`}
+            className={`w-full h-full object-cover ${mediaClassName || ''}`}
             src={mediaUrl}
             autoPlay
             muted
@@ -49,18 +49,18 @@ const Section = ({
           />
         )}
         {mediaType === 'image' && (
-          <Image height={1024} width={500} className={`sc:h-full sc:w-full sc:object-cover ${mediaClassName || ''}`} src={mediaUrl} alt="" />
+          <Image height={1024} width={500} className={`h-full w-full object-cover ${mediaClassName || ''}`} src={mediaUrl} alt="" />
         )}
       </div>
-      <div className={`sc:flex sc:flex-col sc:flex-1 sc:justify-center sc:py-6 sc:px-4 sc:md:px-0 ${contentClassName || ''}`}>
+      <div className={`flex flex-col flex-1 justify-center py-6 px-4 md:px-0 ${contentClassName || ''}`}>
         <div
-          className={`sc:flex sc:flex-col sc:gap-3 sc:prose ${reverse ? 'sc:text-right' : 'sc:text-left'}`}
+          className={`flex flex-col gap-3 prose ${reverse ? 'text-right' : 'text-left'}`}
           dangerouslySetInnerHTML={{
             __html: content || "",
           }}
         />
         {action && (
-          <div className="sc:mt-6">
+          <div className="mt-6">
             {action}
           </div>
         )}

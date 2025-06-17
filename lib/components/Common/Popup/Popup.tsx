@@ -49,21 +49,21 @@ const Popup = ({ endDate, children, maxViewsPerSession }: PopupProps) => {
   return (
     <div
       onClick={handleClose}
-      className={`sc:fixed sc:inset-0 sc:flex sc:items-center sc:justify-center sc:z-50 sc:bg-black/50 sc:transition-opacity sc:duration-300 sc:ease-in-out ${
-        isOpen ? "sc:opacity-100 sc:pointer-events-auto" : "sc:opacity-0 sc:pointer-events-none"
+      className={`fixed inset-0 flex items-center justify-center z-50 bg-black/50 transition-opacity duration-300 ease-in-out ${
+        isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
       }`}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`sc:relative sc:transition-all sc:duration-300 sc:ease-out ${
+        className={`relative transition-all duration-300 ease-out ${
           isOpen
-            ? "sc:opacity-100 sc:scale-100 sc:translate-y-0"
-            : "sc:opacity-0 sc:scale-95 sc:translate-y-8"
+            ? "opacity-100 scale-100 translate-y-0"
+            : "opacity-0 scale-95 translate-y-8"
         }`}
       >
         <button
           onClick={handleClose}
-          className="sc:cursor-pointer sc:absolute sc:top-2 sc:right-2 sc:w-8 sc:h-8 sc:text-gray-500 sc:hover:text-gray-700 sc:transition-colors sc:duration-200"
+          className="cursor-pointer absolute top-2 right-2 w-8 h-8 text-gray-500 hover:text-gray-700 transition-colors duration-200"
         >
           <XMarkIcon />
         </button>

@@ -9,7 +9,7 @@ const meta = {
   },
   tags: ['autodocs'],
   args: {
-    className: 'sc:h-96 sc:w-96',
+    className: 'h-96 w-96',
     beforeImageUrl: 'https://img-comparison-slider.sneas.io/demo/images/before.webp',
     afterImageUrl: 'https://img-comparison-slider.sneas.io/demo/images/after.webp'
   },

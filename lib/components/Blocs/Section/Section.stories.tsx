@@ -29,14 +29,14 @@ export const Basic: Story = {
 
 export const Styled: Story = {
   args: {
-    mediaClassName: 'sc:rounded-3xl sc:shadow-lg',
+    mediaClassName: 'rounded-3xl shadow-lg',
   },
 };
 
 export const WithAction: Story = {
   args: {
     action: (
-      <div className="sc:flex sc:gap-4 sc:justify-start">
+      <div className="flex gap-4 justify-start">
         <Button title="Action button" />
         <Button title="Action button" />
       </div>

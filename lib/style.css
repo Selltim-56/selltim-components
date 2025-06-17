@@ -1,3 +1,3 @@
-@import "tailwindcss" prefix(sc);
+@import "tailwindcss";
 @plugin "@tailwindcss/typography";
 

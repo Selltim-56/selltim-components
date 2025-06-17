@@ -13,14 +13,14 @@ const meta = {
     emblaOptions: { loop: true, align: "center" },
     slidesToShow: 1,
     prevButton: (
-      <div className="sc:bg-white sc:p-1 sc:rounded-full">
+      <div className="bg-white p-1 rounded-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="sc:size-6"
+          className="size-6"
         >
           <path
             strokeLinecap="round"
@@ -31,14 +31,14 @@ const meta = {
       </div>
     ),
     nextButton: (
-      <div className="sc:bg-white sc:p-1 sc:rounded-full">
+      <div className="bg-white p-1 rounded-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="sc:size-6"
+          className="size-6"
         >
           <path
             strokeLinecap="round"
@@ -122,13 +122,13 @@ export const WithCustomChildren: Story = {
   },
   render: (args) => (
     <Carousel {...args}>
-      <div className="sc:bg-blue-500 sc:text-center sc:mx-10 sc:text-white sc:p-4 sc:rounded-lg">
+      <div className="bg-blue-500 text-center mx-10 text-white p-4 rounded-lg">
         Custom Slide 1
       </div>
-      <div className="sc:bg-green-500 sc:text-center sc:mx-10 sc:text-white sc:p-4 sc:rounded-lg">
+      <div className="bg-green-500 text-center mx-10 text-white p-4 rounded-lg">
         Custom Slide 2
       </div>
-      <div className="sc:bg-red-500 sc:text-center sc:mx-10 sc:text-white sc:p-4 sc:rounded-lg">
+      <div className="bg-red-500 text-center mx-10 text-white p-4 rounded-lg">
         Custom Slide 3
       </div>
     </Carousel>

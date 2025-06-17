@@ -44,7 +44,7 @@ const Partners = ({
   );
 
   const slides = partners.map((logo, index) => (
-    <div className={`sc:flex-shrink-0 ${partners.length < 4 ? 'sc:w-80' : 'sc:w-1/2 sc:md:w-1/3 sc:lg:w-1/4'} sc:h-30 sc:p-2 ${className}`} key={index}>
+    <div className={`flex-shrink-0 ${partners.length < 4 ? 'w-80' : ' w-1/2 md:w-1/3 lg:w-1/4'} h-30 p-2 ${className}`} key={index}>
       {logo.href ? (
         <Link href={logo.href} target="_blank" rel="noopener noreferrer">
           <Image
@@ -52,7 +52,7 @@ const Partners = ({
             width={500}
             height={250}
             alt={`Partner logo ${index + 1}`}
-            className="sc:w-full sc:h-full sc:object-contain"
+            className="w-full h-full object-contain"
           />
         </Link>
       ) : (
@@ -61,16 +61,16 @@ const Partners = ({
           width={500}
           height={250}
           alt={`Partner logo ${index + 1}`}
-          className="sc:w-full sc:h-full sc:object-contain"
+          className="w-full h-full object-contain"
         />
       )}
     </div>
   ));
 
   return (
-    <div className="sc:relative">
-      <div className="sc:overflow-hidden" ref={emblaRef}>
-        <div className={`sc:flex ${slides.length < 4 && "sc:md:justify-center"}`}>{slides}</div>
+    <div className="relative">
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className={`flex ${slides.length < 4 && "md:justify-center"}`}>{slides}</div>
       </div>
     </div>
   );
