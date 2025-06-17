@@ -18,11 +18,11 @@ export type ComparisonSliderProps = {
 const ComparisonSlider = ({ beforeImageUrl, afterImageUrl, className }: ComparisonSliderProps) => {
   return (
     <ImgComparisonSlider className={className}>
-      <div slot="first" className={`relative ${className}`}>
-        <Image fill className="object-cover" slot="first" src={beforeImageUrl} alt="" />
+      <div slot="first" className={`sc:relative ${className}`}>
+        <Image fill className="sc:object-cover" slot="first" src={beforeImageUrl} alt="" />
       </div>
-      <div slot="second" className={`relative ${className}`}>
-        <Image fill className="object-cover" slot="second" src={afterImageUrl} alt="" />
+      <div slot="second" className={`sc:relative ${className}`}>
+        <Image fill className="sc:object-cover" slot="second" src={afterImageUrl} alt="" />
       </div>
     </ImgComparisonSlider>
   )

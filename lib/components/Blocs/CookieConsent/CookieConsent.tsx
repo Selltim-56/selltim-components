@@ -279,8 +279,8 @@ const CookieConsent = ({ sendGAEvent, endpoint, color }: CookieConsentProps) => 
           --cc-btn-primary-hover-border-color: #444444;
         }
       `}</style>
-      <button style={{ backgroundColor: color }} className="fixed z-50 bottom-5 left-5 rounded-full p-2 shadow-lg hover:scale-105 duration-500 cursor-pointer" type="button" data-cc="show-preferencesModal">
-        <CookieIcon className="h-6 w-6" color="white" />
+      <button style={{ backgroundColor: color }} className="sc:fixed sc:z-50 sc:bottom-5 sc:left-5 sc:rounded-full sc:p-2 sc:shadow-lg sc:hover:scale-105 sc:duration-500 sc:cursor-pointer" type="button" data-cc="show-preferencesModal">
+        <CookieIcon className="sc:h-6 sc:w-6" color="white" />
       </button>
     </React.Fragment>
   );

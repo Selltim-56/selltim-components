@@ -18,7 +18,7 @@ const Button = ({
   return (
     <button
       type="button"
-      className={`px-6 bg-neutral-100 py-3 hover:bg-neutral-200 cursor-pointer ${className || ''}`}
+      className={`sc:px-6 sc:bg-neutral-100 sc:py-3 sc:hover:bg-neutral-200 sc:cursor-pointer ${className || ''}`}
       {...props}
     >
       {title}

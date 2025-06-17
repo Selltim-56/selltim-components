@@ -57,7 +57,7 @@ const Carousel = ({
   const slides = React.Children.map(children, (child, index) => (
     <div
       style={{ width: `${100 / slidesToShow}%` }}
-      className="flex-shrink-0 flex-grow-0"
+      className="sc:flex-shrink-0 sc:flex-grow-0"
       key={index}
     >
       {child}
@@ -65,21 +65,21 @@ const Carousel = ({
   ));
 
   return (
-    <div className="relative">
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex">{slides}</div>
+    <div className="sc:relative">
+      <div className="sc:overflow-hidden" ref={emblaRef}>
+        <div className="sc:flex">{slides}</div>
       </div>
       {controls && (
         <>
           <button
             onClick={prevSlide}
-            className="cursor-pointer absolute left-2 top-1/2 transform -translate-y-1/2"
+            className="sc:cursor-pointer sc:absolute sc:left-2 sc:top-1/2 sc:transform sc:-translate-y-1/2"
           >
             {prevButton}
           </button>
           <button
             onClick={nextSlide}
-            className="cursor-pointer absolute right-2 top-1/2 transform -translate-y-1/2"
+            className="sc:cursor-pointer sc:absolute sc:right-2 sc:top-1/2 sc:transform sc:-translate-y-1/2"
           >
             {nextButton}
           </button>
