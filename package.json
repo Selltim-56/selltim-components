@@ -6,6 +6,9 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": "22"
+  },
   "main": "./dist/main.umd.cjs",
   "module": "./dist/main.js",
   "exports": {
