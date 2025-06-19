@@ -21,3 +21,14 @@ type Story = StoryObj<typeof meta>;
 export const Basic: Story = {
   args: {},
 };
+
+export const CustomHandle: Story = {
+  args: {
+    handle: (
+      <div className="flex gap-6 text-white text-2xl">
+        <div>&lt;</div>
+        <div>&gt;</div>
+      </div>
+    )
+  },
+};
