@@ -4,3 +4,4 @@ export * from './CookieConsent';
 export * from './Carousel';
 export * from './Partners';
 export * from './Timeline';
+export * from './Recruitment';
