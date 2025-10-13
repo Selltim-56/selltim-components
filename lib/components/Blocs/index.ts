@@ -6,3 +6,4 @@ export * from './Partners';
 export * from './Timeline';
 export * from './ContactCTA';
 export * from './Recruitment';
+export * from './Reassurances';
