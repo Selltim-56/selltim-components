@@ -8,8 +8,6 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  argTypes: {
-  },
   args: {
     phone: '123-456-7890',
     mail: "pouet@mail.com",
