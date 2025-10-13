@@ -99,7 +99,7 @@ const Recruitment = ({
             width={500}
             className={`h-full w-full object-cover ${mediaClassName || ""}`}
             src={mediaUrl}
-            alt=""
+            alt={title || "Recruitment image"}
           />
         )}
       </div>
